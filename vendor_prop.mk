@@ -4,6 +4,10 @@
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=8 \
+    audio.offload.video=true \
+    persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicecomm=true \
     persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Bluetooth_cal.acdb \
     persist.vendor.audio.calfile1=/vendor/etc/acdbdata/General_cal.acdb \
     persist.vendor.audio.calfile2=/vendor/etc/acdbdata/Global_cal.acdb \
@@ -15,6 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480
+
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q660-13149-1 \
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
